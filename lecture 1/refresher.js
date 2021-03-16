@@ -130,12 +130,90 @@
 
 //========================================
 
-const arr = [1, 2, 3, 4];
+// const arr = [1, 2, 3, 4];
 
 // arr.push(5)
 
-for (let i = 0; i < arr.length; i++) {
-  console.log(arr[i]);
-}
+// for (let i = 0; i < arr.length; i++) {
+//   console.log(arr[i]);
+// }
 
-arr.forEach();
+// const callback = (value, index, array) => {
+//     // console.log(value);
+//     // console.log(index);
+//     // console.log(array);
+// }
+
+// arr.forEach(callback);
+
+// arr.forEach((value, index, array) => console.log(value));
+
+// arr.forEach((value) => console.log(value));
+
+// map return new array
+// const arr = [1, 2, 3, 4];
+
+// const arr2 = arr.map((x) => x + 1);
+// const arr2 = arr.map((x) => 5);
+// const arr2 = arr.map((x) => {x + 1});
+
+// console.log(arr2);
+
+// const alpha = ["A", "B"]
+// const newAlpha = alpha.map(x => x.toLowerCase())
+// console.log(newAlpha);
+
+// const arr = [1, 2, 3, 4];
+
+// // const arr2 = arr.filter((x) => x % 2 === 0);
+
+// // const arr2 = arr.filter((x) =>{ x % 2 === 0});
+
+// const arr2 = arr.filter((x) => {
+//   return x % 2 === 0;
+// });
+
+// console.log(arr2);
+
+// const arr = [1, 2, 3, 4];
+
+// const value = arr.find((x) => x % 2 === 0);
+
+// console.log(value);
+
+// const arr = [1, 2, 3, 4];
+
+// const value = arr.findIndex((x) => x % 2 === 0);
+
+// console.log(value);
+
+//=============================================
+
+// const person = {
+//   name: "Ahmed",
+//   age: 26,
+// };
+
+// // const name = person.name
+// // const age = person.age
+
+// // const { name } = person
+// // const { age } = person
+
+// const { name, age } = person;
+// console.log(name, age);
+
+// // const { name: personName, age } = person;
+// // console.log(personName, age);
+
+//=============================================
+
+// arr = ["A", "B", "C"];
+
+// // const first = arr[0];
+// // const second = arr[1];
+// // const third = arr[2];
+
+// const [first, second, third] = arr;
+
+// const [, , third] = arr;
