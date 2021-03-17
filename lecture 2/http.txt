@@ -1,0 +1,27 @@
+=> header (meta data)
+=> body (actual data)
+=> method (GET, POST, PUT, DELETE)
+=> path (/users)
+===================================================
+example
+
+path /users
+method GET
+get request has no body
+headers authentication info (authentication vs authorization)
+
+====================================================
+
+response 
+
+code
+    200 => success
+    300 => redirect
+    400 => 404 not-found
+    500 => internal server error
+
+====================================================
+hit www.google.com 
+by default on port number 80
+
+http://localhost:4200

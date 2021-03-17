@@ -1,0 +1,18 @@
+=================
+
+==> Custom modules 
+==> Core modules 
+==> Third-party modules <== npm (node package manager) 
+        -> dependencies         npm i <package-name>
+        -> dev-dependencies     npm i --save-dev <package-name>
+        -> globally             npm i -g <package-name>    
+
+=================
+
+single thread asynchronous 
+
+=================
+
+
+// server side rendering => template engine
+// front-end and back-end decoupling (APIs) 

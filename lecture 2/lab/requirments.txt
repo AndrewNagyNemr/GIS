@@ -1,0 +1,10 @@
+-Use the core node module fs to write and read from a file
+-Use the core node module http to create server that handles at least two different routes 
+    with two different methods (one should respond with JS object)
+BONUS
+-create a cmd script that takes argv handle todo List
+example:
+    node index.js add <title> <body>              => add todo object in the database.json
+    node index.js delete <id>                     => delete todo object from database.json
+    node index.js list                            => get all todo objects from database.json
+    node index.js edit <id> <title> <body>        => edit todo object in database.json
