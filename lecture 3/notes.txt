@@ -1,0 +1,8 @@
+=======
+Users
+=======
+list all => get     ...../users
+list one => get     ...../users/:id
+add  one => post    ...../users => data {req body}
+edit one => put     ...../users/:id => new data {req body}
+delete   => delete  ...../users/:id
