@@ -11,22 +11,22 @@ const mongoose = require("mongoose");
 //   }
 // );
 
-// mongoose
-//   .connect("mongodb://localhost/GIS", {
-//     useNewUrlParser: true,
-//     useUnifiedTopology: true,
-//   })
-//   .then(() => {
-//     console.log("connected to mogodb");
-//   })
-//   .catch((err) => {
-//     console.log(err);
-//   });
-
-(async () => {
-  await mongoose.connect("mongodb://localhost/GIS", {
+mongoose
+  .connect("mongodb://localhost/GIS", {
     useNewUrlParser: true,
     useUnifiedTopology: true,
+  })
+  .then(() => {
+    console.log("connected to mogodb");
+  })
+  .catch((err) => {
+    console.log(err);
   });
-  console.log("connected to mongodb");
-})()
+
+// (async () => {
+//   await mongoose.connect("mongodb://localhost/GIS", {
+//     useNewUrlParser: true,
+//     useUnifiedTopology: true,
+//   });
+//   console.log("connected to mongodb");
+// })()
