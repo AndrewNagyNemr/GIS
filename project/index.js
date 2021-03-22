@@ -1,11 +1,21 @@
 const express = require("express");
 const mongoose = require("mongoose");
-const userRouter = require("./routes/users");
+const path = require("path");
+
+const usersRouter = require("./routes/users");
+const userViewsRouter = require("./routes/usersViews");
 
 const app = express();
 
 app.use(express.json());
-app.use( "/users", userRouter);
+app.use(express.static("public"));
+
+app.use("/api/users", usersRouter);
+app.use("/users", userViewsRouter);
+
+app.get("/", (req, res) => {
+  res.sendFile(path.join(__dirname, "htmls", "main.html"))
+})
 
 mongoose
   .connect("mongodb://localhost/GIS", {
